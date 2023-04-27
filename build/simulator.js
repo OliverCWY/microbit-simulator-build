@@ -2300,7 +2300,6 @@
     }
     setDisplay(display) {
       this.svg.style.display = display ? "" : "none";
-      console.log(this.svg);
     }
     async createModule() {
       const wrapped = await window.createModule({
@@ -2794,7 +2793,6 @@
           break;
         }
         case "set_display": {
-          console.log(data);
           board2.setDisplay(data.display);
           break;
         }
