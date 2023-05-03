@@ -2226,6 +2226,7 @@
     if (!svg) {
       throw new Error("No SVG");
     }
+    svg.style.display = "none";
     return new Board(notifications, fs2, svg);
   }
   var Board = class {
